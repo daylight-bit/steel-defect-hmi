@@ -1,5 +1,7 @@
 # 钢板缺陷检测 HMI｜交互设计记录
 
+[![展示版](https://img.shields.io/badge/版本-匿名展示版-16a085)](https://github.com/daylight-bit/steel-defect-hmi) [![界面](https://img.shields.io/badge/素材-脱敏截图-34495e)](assets/hmi-demo.png)
+
 ![项目封面](assets/cover.png)
 
 我在大创项目中负责 UI 界面设计。这里记录如何把检测图像、缺陷列表、参数配置和运行状态组织成一个可以理解和操作的工作台。界面仍在完善。
@@ -28,6 +30,24 @@ UI 设计围绕图像主视图、缺陷信息与操作反馈展开。算法训�
 交付包使用 PyQt5，含后台采集和重建线程、SQLite 历史记录及报告导出代码。当前展示基于 Mock/验证版本，真实模型和工业设备联调未在本次核验。
 
 [交互设计与验证边界](docs/design-notes.md)
+
+## 功能线索
+
+| 区域 | 交互目标 |
+|---|---|
+| 图像主视图 | 定位缺陷并保持视觉焦点 |
+| 缺陷信息区 | 让选中对象、类别和位置对应起来 |
+| 参数与任务区 | 展示运行状态，减少误操作 |
+| 历史与导出 | 让结果可以追溯和复核 |
+
+## 仓库结构
+
+```text
+README.md                 项目定位、界面预览与职责边界
+docs/design-notes.md      UI 设计问题与验证计划
+assets/hmi-demo.png       脱敏后的已有界面截图
+assets/workflow.gif       交互流程示意动画
+```
 
 ## 当前进度
 
