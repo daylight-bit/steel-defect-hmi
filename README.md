@@ -47,7 +47,12 @@ README.md                 项目定位、界面预览与职责边界
 docs/design-notes.md      UI 设计问题与验证计划
 assets/hmi-demo.png       脱敏后的已有界面截图
 assets/workflow.gif       交互流程示意动画
+demo/index.html           可操作的本地演示
 ```
+
+## 可操作演示
+
+[打开本地交互 Demo](demo/index.html)（下载仓库后直接用浏览器打开）。页面使用虚拟数据，用来展示交互逻辑。
 
 ## 当前进度
 
